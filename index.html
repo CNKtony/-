@@ -9,6 +9,54 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<style>
+  :root{
+    --paper:#f5f2ea;
+    --paper2:#ebe7dc;
+    --ink:#171714;
+    --soft:#6f6b62;
+    --line:#d5d0c4;
+    --yellow:#e9c94b;
+    --yellow2:#f1d96b;
+    --accent:#8a741c;
+    --green:#40584e;
+  }
+  body{background:var(--paper)}
+  .monogram{border-color:var(--accent);color:var(--accent)}
+  .navlinks a:after,.nav-contact{border-color:var(--accent)}
+  .navlinks a:hover,.nav-contact,.overline b,.label,.note .num,.profile .role,
+  .profile-meta strong,.service-num,.project-type,.fact strong{color:var(--accent)}
+  .overline{color:var(--soft)}
+  .highlight:after{background:var(--yellow)}
+  .note{border-color:var(--accent)}
+  .note p em,.about-copy p em{background:linear-gradient(transparent 65%,var(--yellow2) 65%)}
+  .arrow-link{color:var(--green)}
+  .portrait{background:#d9d4c8}
+  .portrait:before{color:#888174}
+  .section-intro .label,.about>.label,.work-head .label{color:var(--accent)}
+  .service{min-height:290px}
+  .service-price{margin-top:auto;padding-top:22px;display:grid;gap:6px;font-size:11px}
+  .service-price span{color:var(--soft)}
+  .service-price del{margin-left:4px}
+  .service-price{border-top:1px solid var(--line)}
+  .service-price strong{font-size:12px;color:var(--ink)}
+  .service:hover{background:rgba(233,201,75,.12)}
+  .pricing-note{margin-top:20px;padding:10px 16px;border-left:2px solid var(--accent);color:#51483f;font-size:13px}
+  #work{background:transparent}
+  .project{border-color:var(--accent)}
+  .art-two{background:#e7e3d8}
+  .art-two:after{color:var(--ink)}
+  .art-four{background:var(--yellow)}
+  .about .facts{border-color:var(--accent)}
+  .contact{background:var(--green);border-top:0;color:var(--paper)}
+  .contact .label{color:var(--yellow2)}
+  .contact-copy{color:#d7ddd6}
+  .email{border-color:var(--yellow);color:var(--paper)}
+  footer{background:#ebe5da;border-color:var(--line)}
+  @media(max-width:600px){
+    .service{min-height:235px}
+  }
+</style>
 </head>
 <body>
 
@@ -42,7 +90,7 @@
           <div class="num">NOTE / 001</div>
           <p>Pas simplement <em>du code</em>.<br>Une attention portée au produit, à l'usage et aux détails.</p>
         </div>
-        <a class="arrow-link" href="#services">Découvrir les services ↓</a>
+        <a class="arrow-link" href="#services">Voir les tarifs ↓</a>
         <div class="profile-wrap">
           <div class="profile">
             <div class="portrait"></div>
@@ -65,7 +113,7 @@
     <div class="container">
       <div class="section-intro">
         <div class="label">02 — Services</div>
-        <h2 class="section-title">Du simple site vitrine au <em>système intelligent.</em></h2>
+        <h2 class="section-title">Des solutions numériques à <em>prix accessibles.</em></h2>
       </div>
 
       <div class="services">
@@ -73,33 +121,49 @@
           <div class="service-num">01</div>
           <h3>Site vitrine</h3>
           <p>Une présence en ligne élégante, rapide et pensée pour donner confiance dès la première visite.</p>
-          <div class="service-link"><a href="services/site-vitrine.html">EN SAVOIR PLUS ↗</a></div>
+          <div class="service-price">
+            <span>Prix habituel <del>100 $ – 800 $</del></span>
+            <strong>Mon prix : 30 $ – 500 $</strong>
+          </div>
         </article>
         <article class="service">
           <div class="service-num">02</div>
           <h3>Site web pro</h3>
           <p>Plateforme sur mesure, espace client, administration, comptes et fonctionnalités métier.</p>
-          <div class="service-link"><a href="services/site-web-pro.html">EN SAVOIR PLUS ↗</a></div>
+          <div class="service-price">
+            <span>Prix habituel <del>300 $ – 1 500 $</del></span>
+            <strong>Mon prix : 200 $ – 1000 $</strong>
+          </div>
         </article>
         <article class="service">
           <div class="service-num">03</div>
           <h3>E-commerce</h3>
           <p>Catalogue, commandes, paiement et gestion : une boutique conçue autour de votre activité.</p>
-          <div class="service-link"><a href="services/e-commerce.html">EN SAVOIR PLUS ↗</a></div>
+          <div class="service-price">
+            <span>Prix habituel <del>500 $ – 3 000 $</del></span>
+            <strong>Mon prix : 400 $ – 1 500 $</strong>
+          </div>
         </article>
         <article class="service">
           <div class="service-num">04</div>
           <h3>Applications</h3>
           <p>Applications web ou mobiles avec une interface soignée et une architecture solide.</p>
-          <div class="service-link"><a href="services/applications.html">EN SAVOIR PLUS ↗</a></div>
+          <div class="service-price">
+            <span>Prix habituel <del>800 $ – 5 000 $</del></span>
+            <strong>Mon prix : 600 $ – 2 500 $</strong>
+          </div>
         </article>
         <article class="service">
           <div class="service-num">05</div>
           <h3>Ingénierie IA</h3>
           <p>Agents, automatisation, LLM et intégration d'IA dans des produits qui ont un vrai usage.</p>
-          <div class="service-link"><a href="services/ingenierie-ia.html">EN SAVOIR PLUS ↗</a></div>
+          <div class="service-price">
+            <span>Prix habituel <del>500 $ – 5 000 $</del></span>
+            <strong>Mon prix : 200 $ – 2 000 $</strong>
+          </div>
         </article>
       </div>
+      <p class="pricing-note"><strong>À noter :</strong> les tarifs affichés sont des estimations. Le prix final peut être plus élevé selon la complexité, les fonctionnalités et le temps nécessaire. Un devis précis sera proposé après discussion de votre projet.</p>
     </div>
   </section>
 

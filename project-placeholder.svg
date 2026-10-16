@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title">
+  <title id="title">Image du projet à ajouter</title>
+  <rect width="1200" height="620" fill="#ebe7dc"/>
+  <g fill="none" stroke="#8a741c" stroke-width="3">
+    <rect x="523" y="226" width="154" height="116" rx="2"/>
+    <circle cx="569" cy="267" r="11"/>
+    <path d="m535 326 42-42 26 25 22-19 38 36"/>
+  </g>
+  <text x="600" y="382" fill="#6f6b62" font-family="monospace" font-size="20" text-anchor="middle" letter-spacing="2">IMAGE A AJOUTER</text>
+</svg>
